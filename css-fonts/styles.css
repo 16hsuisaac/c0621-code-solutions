@@ -1,0 +1,9 @@
+h1, p{
+ font-family: 'Dancing Script', cursive;
+}
+h2{
+  font-family: monospace;
+}
+body{
+  line-height: 1.9em;
+}
