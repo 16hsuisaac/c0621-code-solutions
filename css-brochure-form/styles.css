@@ -1,0 +1,59 @@
+body {
+  margin: auto 30% auto 30%;
+}
+
+h1 {
+  font-family: "AtlasGrotesk", sans-serif;
+  color: rgb(255, 104, 78);
+  font-size: 24pt;
+  text-align: center;
+}
+
+div {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 8pt;
+  text-align: left;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 0;
+  padding-left: 20px;
+  font-size: 16pt;
+}
+
+input,
+select {
+  border-radius: 8px;
+  border-color: lightgray;
+  text-align: left;
+  padding: 15px;
+  font-size: 16pt;
+  width: 100%;
+  box-shadow: none;
+}
+
+input::placeholder {
+  color: rgb(196, 195, 195);
+}
+
+select {
+  background-color: rgb(238, 237, 237);
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+/* try to make this one the bold atlas grotesk */
+#submit {
+  font-family: "AtlasGrotesk", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: rgb(255, 104, 78);
+  padding: 5px 20px;
+  width: 100px;
+  border: auto;
+  border-color: white;
+  box-shadow: none;
+  border-radius: 25px;
+}
