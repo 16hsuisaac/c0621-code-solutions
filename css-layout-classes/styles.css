@@ -1,0 +1,33 @@
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  width: 100%;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-two-thirds {
+  flex-basis: calc(2 * (100% / 3));
+}
+
+.column-one-quarter {
+  flex-basis: 25%;
+}
+
+img {
+  width: 100%;
+}
