@@ -1,0 +1,32 @@
+.container {
+  background-color: #1996da;
+  width: 100%;
+}
+
+.row {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+img {
+  background-color: white;
+  border-radius: 50%;
+}
+
+div {
+  color: white;
+  text-align: center;
+}
