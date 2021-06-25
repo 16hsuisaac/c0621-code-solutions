@@ -2,6 +2,7 @@
   background-color: #1996da;
   width: 100%;
   padding: 10%;
+  margin: auto;
 }
 
 .row {
@@ -25,11 +26,29 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-basis: calc(100% / 3);
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 24pt;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 12pt;
+  color: lightgray;
+  margin-top: 0%;
+  max-width: 85%;
 }
 
 img {
-  max-height: 25%;
-  max-width: 25%;
+  height: 50%;
+  width: 50%;
 }
 
 div {
@@ -43,11 +62,12 @@ div {
   background-color: white;
   border-radius: 50%;
   margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 75%;
-  margin-left: 15px;
-}
-
-p {
-  max-width: 200px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
