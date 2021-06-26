@@ -1,0 +1,14 @@
+.container {
+  width: 65%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-half {
+  display: flex;
+  flex-basis: 50%;
+}
