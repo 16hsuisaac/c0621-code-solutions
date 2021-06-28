@@ -66,3 +66,12 @@ h2 {
   padding-left: 45px;
   padding-right: 45px;
 }
+
+.left-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text {
+  padding: 2%;
+}
