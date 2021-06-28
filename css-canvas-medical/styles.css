@@ -79,7 +79,7 @@ header {
 
 .hero-text-all {
   max-width: 90%;
-  max-height: 100%;
+  height: 750px;
   color: white;
   background: rgba(0, 0, 0, 0.89);
   margin-top: 5%;
@@ -92,6 +92,7 @@ header {
   font-family: 'Tiempos Headline', serif;
   font-size: 32pt;
   max-width: 30%;
+  letter-spacing: 0.1rem;
 }
 
 .hero-text {
@@ -99,20 +100,22 @@ header {
   top: 40%;
   left: 22%;
   font-family: 'Avenir', sans-serif;
-  line-height: 150%;
+  line-height: 200%;
   font-size: 14pt;
 }
 
 #get-started {
   position: absolute;
-  bottom: 30%;
+  bottom: 20%;
   left: 22%;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-family: 'Avenir', sans-serif;
   font-weight: 500;
   line-height: 150%;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
 .row-location-container {
@@ -197,7 +200,7 @@ header {
   padding-bottom: 15px;
   padding-left: 50px;
   padding-right: 50px;
-  font-size: 14pt;
+  font-size: 16pt;
   text-align: center;
   color: white;
 }
