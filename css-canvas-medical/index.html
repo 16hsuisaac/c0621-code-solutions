@@ -12,60 +12,72 @@
 
 <body>
   <div class="container">
-    <div class="row">
+    <div class="row" id="header">
       <header>
         <div class="column-half">
           <div class="canvas-logo">
-            <img src="images/logo-white.png" alt="canvas logo">
+            <img src="images/logo-blue.svg" alt="canvas logo" id="canvas-logo">
           </div>
         </div>
-        <div class="column-half">
+        <div class="column-half" id="nav">
           <nav>
-            <a>Product</a>
-            <a>Implementation</a>
-            <a>About Us</a>
-            <a>Blog</a>
-            <a class="button">Contact Us</a>
+            <div class="column-tenth">
+              <a>Product</a>
+            </div>
+            <div class="column-tenth">
+              <a>Implementation</a>
+            </div>
+            <div class="column-tenth">
+              <a>About Us</a>
+            </div>
+            <div class="column-tenth">
+              <a>Blog</a>
+            </div>
+            <div class="column-tenth">
+              <a class="button">Contact Us</a>
+            </div>
           </nav>
         </div>
       </header>
     </div>
-    <div class="row">
-      <div class="hero">
-        <img src="images/hero.jpg" alt="a happy woman">
-      </div>
-      <h1>The EMR Reimagined for Primary Care</h1>
-      <p class="hero-text">Can't remember the last time you talked with a patient without focusing <br>
-      on the EMR? Canvas lets you rediscover joy in the work you do. Capture <br>meaningful data,
-      identify gaps in care, and move seamlessly between <br>tasks within the platform. You stay present
-      with patients while youre <br>whole care team stays up-to-speed. Be a better doctor with Canvas, <br>
-      designed for primary care providers with the help of primary care <br>providers.
-      </p>
-      <a class="button">Get Started</a>
+      <div class="row" id="herodiv">
+        <div class="hero-text-all">
+          <img src="images/hero.jpg" alt="a happy woman" class="hero-image">
+          <h1 class="hero-title">The EMR Reimagined for Primary Care</h1>
+          <p class="hero-text">Can't remember the last time you talked with a patient without focusing <br>
+            on the EMR? Canvas lets you rediscover joy in the work you do. Capture <br>meaningful data,
+            identify gaps in care, and move seamlessly between <br>tasks within the platform. You stay present
+            with patients while youre <br>whole care team stays up-to-speed. Be a better doctor with Canvas, <br>
+            designed for primary care providers with the help of primary care <br>providers.
+          </p>
+          <a class="button" id="get-started">Get Started</a>
+        </div>
     </div>
-    <div class="row">
-      <div class="h2-center">
-        <h2>Clinicians Prefer Canvas</h2>
+    <div class="row-location-container">
+      <div class="row">
+        <div class="h2-center">
+          <h2>Clinicians Prefer Canvas</h2>
+        </div>
+        <div class="p-center">
+          <p>Physican-owned primary care practices across the country have <br>already made Canvas the
+          fabric of their care.</p>
+        </div>
       </div>
-      <div class="p-center">
-        <p>Physican-owned primary care practices across the country have <br>already made Canvas the
-        fabric of their care.</p>
+      <div class="row" id="locations">
+        <div class="column-half" id="half-middle">
+          <p class="locations">Cascade Family Practice, Portland OR <br>
+          Temescal Creek Medicine, Oakland CA <br>
+          San Juan Healthcare, Friday Harbor WA</p>
+        </div>
+        <div class="column-half" id="half-middle2">
+          <p class="locations">Ward Medical Clinic, Bonifay FL <br>
+          Caribou Medical, Towanda PA <br>
+          Bay Tree Family Care, Red Bay AL</p>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="column-half">
-        <p class="locations">Cascade Family Practice, Portland OR <br>
-        Temescal Creek Medicine, Oakland CA <br>
-        San Juan Healthcare, Friday Harbor WA</p>
-      </div>
-      <div class="column-half">
-        <p class="locations">Ward Medical Clinic, Bonifay FL <br>
-        Caribou Medical, Towanda PA <br>
-        Bay Tree Family Care, Red Bay AL</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column-half">
+    <div class="row" id="learn">
+      <div class="column-half" id="learn-left">
         <div class="h2-left">
           <h2>Ready to learn more?</h2>
         </div>
@@ -73,50 +85,52 @@
           <p>Schedule a private meeting now</p>
         </div>
       </div>
-      <div class="column-half">
-        <a class="button">Get Started</a>
+      <div class="column-half" id="button-right">
+        <a class="button started">Get Started</a>
       </div>
     </div>
     <footer>
-      <div class="row">
-        <div class="column-quarter">
-          <div class="canvas-logo">
-            <img src="images/logo-white.png" alt="canvas logo">
+      <div class="row-background">
+        <div class="row footer">
+          <div class="column-quarter">
+            <div class="canvas-logo">
+              <img src="images/logo-white.png" alt="canvas logo" class="logo-white">
+            </div>
+            <div class="fp-left">
+              <p>2307 Irving Street, Suite 228<br>
+              San Francisco CA 94122<br>
+              (800)370-1416<br>
+              info@canvasmedical.com</p>
+            </div>
           </div>
-          <div class="fp-left">
-            <p>2307 Irving Street, Suite 228<br>
-            San Francisco CA 94122<br>
-            (800)370-1416<br>
-            info@canvasmedical.com</p>
+          <div class="column-quarter">
           </div>
-        </div>
-        <div class="column-quarter">
-        </div>
-        <div class="column-quarter">
-          <h3>COMPANY</h3>
-          <nav class="footer">
-            <a>About Us</a>
-            <a>Blog</a>
-          </nav>
-        </div>
-        <div class="column-quarter">
-          <h3>PRODUCT</h3>
-          <nav class="footer">
-            <a>Product</a>
-            <a>Implementation</a>
-            <a>For Health Plans</a>
-            <a>Security</a>
-          </nav>
+          <div class="column-quarter">
+            <nav class="footer-nav">
+              <span>COMPANY</span>
+              <a>About Us</a>
+              <a>Blog</a>
+            </nav>
+          </div>
+          <div class="column-quarter">
+            <nav class="footer-nav">
+              <span>PRODUCT</span>
+              <a>Product</a>
+              <a>Implementation</a>
+              <a>For Health Plans</a>
+              <a>Security</a>
+            </nav>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="column-sixth">
-          <a>Privacy &amp; Terms</a>
+        <div class="row" id="final">
+          <div class="column-sixth">
+            <a>Privacy &amp; Terms</a>
+          </div>
+          <div class="column-sixth">
+            <a>Contact Us</a>
+          </div>
         </div>
-        <div class="column-sixth">
-          <a>Contact Us</a>
-        </div>
-      </div>
     </footer>
   </div>
 </body>
