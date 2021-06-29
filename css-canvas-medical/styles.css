@@ -5,12 +5,14 @@
 
 .row {
   display: flex;
+}
+
+.flex-column-center {
   justify-content: center;
   flex-direction: column;
 }
 
 .column-half {
-  display: flex;
   flex-basis: 50%;
 }
 
@@ -31,7 +33,7 @@ nav {
   width: fit-content;
 }
 
-#nav {
+.nav {
   justify-content: space-evenly;
 }
 
@@ -41,7 +43,7 @@ header {
   align-items: center;
 }
 
-#header {
+.header {
   align-items: center;
   border-bottom: solid #e7e9ec;
   border-bottom-width: 2px;
@@ -59,11 +61,11 @@ header {
   font-family: 'Avenir', sans-serif;
 }
 
-#canvas-logo {
+.canvas-logo {
   max-width: 60%;
 }
 
-#herodiv {
+.herodiv {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -104,7 +106,7 @@ header {
   font-size: 14pt;
 }
 
-#get-started {
+.get-started {
   position: absolute;
   bottom: 20%;
   left: 22%;
@@ -147,13 +149,14 @@ header {
   font-weight: 500;
 }
 
-#locations {
+.locations {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-#half-middle,
-#half-middle2 {
+.half-middle,
+.half-middle2 {
   justify-content: center;
   line-height: 300%;
   font-family: 'Avenir', sans-serif;
@@ -161,7 +164,7 @@ header {
   padding-bottom: 5%;
 }
 
-#learn {
+.learn {
   display: flex;
   flex-direction: row;
   max-width: 90%;
@@ -170,7 +173,7 @@ header {
   align-items: center;
 }
 
-#learn-left {
+.learn-left {
   flex-direction: column;
   padding-bottom: 0;
   font-family: 'Tiempos Headline', serif;
@@ -189,7 +192,7 @@ header {
   margin: 0;
 }
 
-#button-right {
+.button-right {
   flex-direction: row-reverse;
   align-items: center;
   height: 50%;
@@ -260,7 +263,7 @@ footer {
   line-height: 150%;
 }
 
-#final {
+.final {
   display: flex;
   flex-direction: row;
   width: 90%;
