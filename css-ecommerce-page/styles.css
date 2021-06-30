@@ -1,10 +1,15 @@
 .container {
-  width: 1500px;
+  max-width: 1300px;
   margin: auto;
 }
 
 .center {
   justify-content: center;
+}
+
+h1 {
+  font-size: 18pt;
+  margin-bottom: 0;
 }
 
 .column-fifth {
@@ -16,6 +21,7 @@
 .row {
   display: flex;
   flex-direction: row;
+  max-width: 1300px;
   font-family: 'DM Sans', serif;
 }
 
@@ -28,8 +34,10 @@
 }
 
 .text {
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   text-align: left;
   font-size: 6pt;
 }
@@ -38,6 +46,20 @@
   display: inline;
 }
 
+.black {
+  margin-right: 5px;
+}
+
 .gray {
   color: #d3d3d3;
+  padding-left: 2%;
+}
+
+.border-left {
+  border-left: solid;
+  border-width: 1px;
+}
+
+mark {
+  background-color: #fff2e7;
 }
