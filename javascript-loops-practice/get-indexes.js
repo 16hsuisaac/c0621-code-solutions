@@ -2,10 +2,10 @@
 function getIndexes(array) {
   var length = array.length;
   var i = 0;
-  var object = [];
+  var newArray = [];
   while (i < length) {
-    object.push(i);
+    newArray.push(i);
     i++;
   }
-  return object;
+  return newArray;
 }
