@@ -1,0 +1,42 @@
+
+button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5%;
+  color: white;
+  font-size: 18pt;
+}
+
+.open {
+  background-color: #4a4ae9;
+  border-radius: 5%;
+}
+
+.no {
+  background-color: #eb5d5d;
+}
+
+.modal {
+  -webkit-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  width: 25%;
+  height: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.before {
+  display: none;
+}
+
+.after {
+  display: flex;
+  position: fixed;
+  top: 35%;
+  left: 35%;
+}
