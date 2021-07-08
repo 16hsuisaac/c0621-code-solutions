@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.light-background {
+  background-color: rgb(254, 249, 241);
+}
+
+.light {
+  background-color: #faea84;
+  -webkit-box-shadow: 0 0 8px 5px #faea84;
+  box-shadow: 0 0 8px 5px #faea84;
+}
+
+.dark-background {
+  background-color: rgb(17, 17, 17);
+}
+
+.dark {
+  background-color: rgb(37, 37, 37);
+  -webkit-box-shadow: 1px -3px 0 5px #000;
+  box-shadow: 1px -8px 0 5px #000;
+}
