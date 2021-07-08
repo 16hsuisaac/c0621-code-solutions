@@ -7,13 +7,16 @@ function capitalizeWords(string) {
   for (var i = 1; i < string.length; i++) {
     if (string[i - 1] === ' ') {
       partString = partString + string.charAt(i).toUpperCase();
-    } if (string[i] !== ' ' & string[i - 1] !== ' ') {
+    }
+    if (string[i] !== ' ' & string[i - 1] !== ' ') {
       partString = partString + string[i];
-    } if (string[i] === ' ') {
+    }
+    if (string[i] === ' ') {
       partString = partString + ' ';
       newString = newString + partString;
       partString = '';
-    } if (i === (string.length - 1)) {
+    }
+    if (i === (string.length - 1)) {
       newString = newString + partString;
     }
   }
