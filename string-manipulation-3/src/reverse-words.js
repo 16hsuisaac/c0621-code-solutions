@@ -9,7 +9,8 @@ function reverseWords(string) {
       partString = ' ' + partString;
       for (var i2 = (partString.length - 1); i2 >= 0; i2--) {
         newString = newString + partString[i2];
-      } partString = '';
+      }
+      partString = '';
     }
   }
   newString = newString.slice(0, (string.length));

@@ -2,26 +2,31 @@
 function titleCase(string) {
   var newString = '';
   var partString = '';
-  partString = partString + string.charAt(0).toUpperCase();
-  for (var i = 1; i <= string.length; i++) {
+  var badWords = ['Of', 'The', 'For', 'To', 'In'];
+  for (var i = 0; i <= string.length; i++) {
     if ((string[i] !== ' ') & (i !== string.length)) {
       partString = partString + string[i];
     } else {
-      if (partString.length > 3) {
-        partString = partString.charAt(0).toUpperCase() + partString.slice(1);
-      } if (partString === 'Javascript') {
+      partString = partString.charAt(0).toUpperCase() + partString.slice(1);
+      if (partString === 'Javascript') {
         partString = 'JavaScript';
-      } if (partString === 'Javascript:') {
+      }
+      if (partString === 'Javascript:') {
         partString = 'JavaScript:';
-      } if (partString === 'web') {
-        partString = 'Web';
-      } if (partString === 'api') {
+      }
+      if (partString === 'Api') {
         partString = 'API';
+      }
+      for (var i3 = 0; i3 < badWords.length; i3++) {
+        if (partString === badWords[i3]) {
+          partString = partString.charAt(0).toLowerCase() + partString.slice(1);
+        }
       }
       newString = newString + partString + ' ';
       partString = '';
     }
   }
+  newString = newString.charAt(0).toUpperCase() + newString.slice(1);
   newString = newString.slice(0, (string.length));
   var colonString = '';
   for (var i2 = 0; i2 < newString.length; i2++) {
