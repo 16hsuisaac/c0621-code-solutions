@@ -22,3 +22,7 @@
 .incorrect {
   color: red;
 }
+
+h1 {
+  white-space: nowrap;
+}
