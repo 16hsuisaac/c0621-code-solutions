@@ -12,7 +12,8 @@ function difference(first, second) {
       newArray.push(first[i]);
     }
     isDifferent = true;
-  } for (e = 0; e < second.length; e++) {
+  }
+  for (e = 0; e < second.length; e++) {
     for (i = 0; i < first.length; i++) {
       if (second[e] === first[i]) {
         isDifferent = false;
