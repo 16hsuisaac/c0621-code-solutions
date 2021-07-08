@@ -1,0 +1,24 @@
+.container {
+  height: 600px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+}
+
+.highlight {
+  text-decoration: underline;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
