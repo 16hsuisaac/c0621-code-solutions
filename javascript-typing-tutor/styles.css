@@ -1,0 +1,28 @@
+.container {
+  height: 600px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+}
+
+.highlight {
+  border-bottom: solid;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+h1 {
+  white-space: nowrap;
+}
