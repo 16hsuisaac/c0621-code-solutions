@@ -17,26 +17,36 @@ for (var i = 0; i < suit.length; i++) {
     deck.push(card);
   }
 }
-console.log(deck);
-/* shuffle */
+
 function rng() {
-  var num = _.random(0, deck.length);
+  var num = _.random(0, (deck.length - 1));
   return num;
 }
 var x = 0;
 
-/* distribute cards and remove from deck */
 for (var o = 0; o < playerArray.length; o++) {
   for (var u = 0; u < 2; u++) {
     x = rng();
     playerArray[o].hand.push(deck[x]);
-    _.remove(deck, deck[x]);
     playerArray[o].score = playerArray[o].score + deck[x].Value;
-    console.log(deck[x].Value);
-    console.log(playerArray[o].score);
+    _.remove(deck, deck[x]);
   }
 }
-console.log(playerArray);
-console.log(deck);
 
-/* find the winning player */
+if (playerArray[0].score > playerArray[1].score) {
+  var winner1 = playerArray[0];
+} else {
+  winner1 = playerArray[1];
+}
+if (playerArray[2].score > playerArray[3].score) {
+  var winner2 = playerArray[2];
+} else {
+  winner2 = playerArray[3];
+}
+if (winner1.score > winner2.score) {
+  var finalWinner = winner1;
+} else {
+  finalWinner = winner2;
+}
+
+console.log('The winning player is: ', finalWinner.name);
