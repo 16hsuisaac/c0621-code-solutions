@@ -33,20 +33,14 @@ for (var o = 0; o < playerArray.length; o++) {
   }
 }
 
-if (playerArray[0].score > playerArray[1].score) {
-  var winner1 = playerArray[0];
-} else {
-  winner1 = playerArray[1];
-}
-if (playerArray[2].score > playerArray[3].score) {
-  var winner2 = playerArray[2];
-} else {
-  winner2 = playerArray[3];
-}
-if (winner1.score > winner2.score) {
-  var finalWinner = winner1;
-} else {
-  finalWinner = winner2;
+var finalWinnerScore = 0;
+var finalWinner = null;
+
+for (var w = 0; w < playerArray.length; w++) {
+  if (playerArray[w].score > finalWinner) {
+    finalWinnerScore = playerArray[w].score;
+    finalWinner = playerArray[w];
+  }
 }
 
-console.log('The winning player is: ', finalWinner.name);
+console.log('The winning player is: ', finalWinner.name, 'with a score of: ', finalWinnerScore);
