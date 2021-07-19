@@ -37,7 +37,7 @@ var finalWinnerScore = 0;
 var finalWinner = null;
 
 for (var w = 0; w < playerArray.length; w++) {
-  if (playerArray[w].score > finalWinner) {
+  if (playerArray[w].score > finalWinnerScore) {
     finalWinnerScore = playerArray[w].score;
     finalWinner = playerArray[w];
   }
