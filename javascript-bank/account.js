@@ -8,11 +8,9 @@ function Account(number, holder) {
 
 Account.prototype.deposit = function (amount) {
   var positive = false;
-  var depositObject = new Transaction();
   if (amount > 0 && amount % 1 === 0) {
     positive = true;
-    depositObject.type = 'deposit';
-    depositObject.amount = amount;
+    var depositObject = new Transaction('deposit', amount);
     this.transactions.push(depositObject);
   }
   return positive;
@@ -20,11 +18,9 @@ Account.prototype.deposit = function (amount) {
 
 Account.prototype.withdraw = function (amount) {
   var positive = false;
-  var withdrawObject = new Transaction();
   if (amount > 0 && amount % 1 === 0) {
     positive = true;
-    withdrawObject.type = 'withdrawal';
-    withdrawObject.amount = amount;
+    var withdrawObject = new Transaction('withdrawal', amount);
     this.transactions.push(withdrawObject);
   }
   return positive;
