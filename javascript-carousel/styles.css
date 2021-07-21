@@ -1,0 +1,55 @@
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.carousel-div {
+  border: solid black 3px;
+}
+
+.column-10 {
+  display: flex;
+  flex-basis: 25%;
+}
+
+.column-80 {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.margin {
+  margin: 0.25rem;
+}
+
+.arrow-font {
+  font-size: 2rem;
+}
+
+img {
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.cursor-hover {
+  cursor: pointer;
+}
