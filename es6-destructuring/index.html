@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring</title>
+</head>
+<body>
+
+  <script>
+    const book1 = {
+      title: 'Goodnight Punpun',
+      author: 'Inio Asano',
+      libraryID: 3353
+    };
+    const { title, author, libraryID } = book1;
+    console.log(`The title of the book is ${title}, the author is ${author}, and the library id is ${libraryID}`);
+
+    const book2 = {
+      title: 'Les Fleurs du mal',
+      author: 'Charles Baudelaire',
+      libraryID: 2345
+    };
+    const { title: book2title, author: book2author, libraryID: book2id } = book2;
+    console.log(`The title of the books is ${book2title}, the author is ${book2author}, and the library id is ${book2id}`);
+
+    const library = [
+      {
+        title: 'The Road Ahead',
+        author: 'Bill Gates',
+        libraryID: 1254
+      },
+      {
+        title: 'Walter Isaacson',
+        author: 'Steve Jobs',
+        libraryID: 4264
+      },
+      {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        libraryID: 3245
+      },
+      {
+        title: "Dead Dead Demon's De De De De Destruction",
+        author: 'Inio Asano',
+        libraryID: 1233
+      }
+    ];
+    const [book3, book4, book5] = library;
+    console.log(`Book 3: The title of the book is ${book3.title}, the author is ${book3.author}, and the libarry id is ${book3.libraryID}`);
+    console.log(`Book 4: The title of the book is ${book4.title}, the author is ${book4.author}, and the libarry id is ${book4.libraryID}`);
+    console.log(`Book 5: The title of the book is ${book5.title}, the author is ${book5.author}, and the libarry id is ${book5.libraryID}`);
+
+    const book6 = library[3];
+    console.log(`Book 6: The title of the book is ${book6.title}, the author is ${book6.author}, and the libarry id is ${book6.libraryID}`);
+  </script>
+</body>
+</html>
