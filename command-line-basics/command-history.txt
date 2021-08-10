@@ -1,0 +1,554 @@
+    1  git config --global user.name "Isaac Hsu"
+    2  git config --global user.email "16hsuisaac@gmail.com"
+    3  git config --global --list
+    4  cd ~/repos/c0621-code-solutions
+    5  cd ~/repos/c0621-code-solutions/http-messages
+    6  http http://www.example.com
+    7  http --verbose http://www.example.com
+    8  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+    9  http --body GET https://example.com > index.html
+   10  cd ~/repos/c0621-code-solutions
+   11  git status
+   12  git add http-messages
+   13  git commit -m "completed http-messages assignment"
+   14  git push origin http-messages
+   15  git checkout master
+   16  git status
+   17  git pull origin master
+   18  git branch javascript-ajax
+   19  git switch javascript-ajax
+   20  git status
+   21  git add javascript-ajax
+   22  git status
+   23  git commit -m "completed javascript-ajax exercise"
+   24  git push origin javascript-ajax
+   25  clear
+   26  cd 
+   27  dev-env
+   28  cd ~/repos
+   29  git clone git@github.com:16hsuisaac/ajax-project.git
+   30  cd ajax-project
+   31  npm ci
+   32  git status
+   33  git branch issue-1-view-and-roll
+   34  git switch issue-1-view-and-roll
+   35  git status
+   36  git add images/paws.png
+   37  git add index.html
+   38  git status
+   39  git commit -m "completed html for opening screen"
+   40  git push origin issue-1-view-and-roll
+   41  git status
+   42  git add css/layout.css css/styles.css index.html
+   43  git status
+   44  git commit -m "completed css for opening screen"
+   45  git push origin issue-1-view-and-roll
+   46  git status
+   47  git add css/layout.css css/styles.css index.html js/main.js images/house-door.png
+   48  git status
+   49  git commit -m "created header/footer and accessed public API for dog image"
+   50  git push origin issue-1-view-and-roll
+   51  git status
+   52  git add css/styles.css index.html js/main.js
+   53  git status
+   54  git commit -m "added in breed"
+   55  git push origin issue-1-view-and-roll
+   56  git status
+   57  git add css/styles.css index.html js/main.js
+   58  git status
+   59  git commit -m "a random button was added to return a new dog, also cleaned up CSS and tested functionality"
+   60  git push origin issue-1-view-and-roll
+   61  git status
+   62  git add css/layout.css css/styles.css index.html
+   63  git status
+   64  git commit -m "made desktop compatible"
+   65  git push origin issue-1-view-and-roll
+   66  git status
+   67  git add css/styles.css
+   68  git add index.html
+   69  git status
+   70  git push origin issue-1-view-and-roll
+   71  git status
+   72  git add css/styles.css
+   73  git commit -m "cleaned up css"
+   74  git push origin issue-1-view-and-roll
+   75  git status
+   76  git checkout master
+   77  git pull origin master
+   78  git status
+   79  git branch issue-2-breed-info
+   80  git switch issue-2-breed-info
+   81  cd ~/repos/ajax-project
+   82  git status
+   83  git add index.html js/main.js
+   84  git commit -m "added area/link for user to click for more information"
+   85  git push origin issue-2-breed-info
+   86  git status
+   87  git add css/styles.css index.html
+   88  git status
+   89  git commit -m "created modal"
+   90  git status
+   91  git push origin issue-2-breed-info
+   92  git status
+   93  git add css/styles.css index.html
+   94  git status
+   95  git commit -m "added exit button to modal"
+   96  git push origin issue-2-breed-info
+   97  git status
+   98  git add css/styles.css index.html js/main.js
+   99  git status
+  100  git commit -m "implemented javascript to show/hide modal"
+  101  git push origin issue-2-breed-info
+  102  git status
+  103  git add css/layout.css css/styles.css index.html
+  104  git status
+  105  git commit -m "made desktop compatible and cleaned up css"
+  106  git push origin issue-2-breed-info
+  107  git status
+  108  git add css/layout.css index.html
+  109  git status
+  110  git commit -m "removed height from modal and removed positioning element for exit button"
+  111  git push origin issue-2-breed-info
+  112  git status
+  113  git checkout master
+  114  git status
+  115  git pull origin master
+  116  git branch issue-3-save-dogs
+  117  git switch issue-3-save-dogs
+  118  git status
+  119  git add images/Bookmark plus.png
+  120  git status
+  121  git add images/bookmark-plus.png
+  122  git status
+  123  git commit -m "imported image of bookmark-plus for the button"
+  124  git push origin issue-3-save-dogs
+  125  git status
+  126  git add css/layout.css css/styles.css index.html
+  127  git status
+  128  git commit -m "cleaned up css and fixed errors regarding the random button"
+  129  git status
+  130  git push origin issue-3-save-dogs
+  131  git status
+  132  git add css/styles.css index.html
+  133  git status
+  134  git commit -m "created bookmark button"
+  135  git status
+  136  git add images/bookmark-fill.png
+  137  git add css/styles.css index.html js/main.js
+  138  git status
+  139  git commit -m "bookmark icon now changes on click"
+  140  git status
+  141  git push origin issue-3-save-dogs
+  142  git status
+  143  git add js/data.js js/main.js
+  144  git statu
+  145  git status
+  146  git commit -m "stores information in local storage and allows user to unsave entries"
+  147  git status
+  148  git push origin issue-3-save-dogs
+  149  git status
+  150  git add css/styles.css
+  151  git status
+  152  git commit -m "cleaned up css and checked for errors"
+  153  git push origin issue-3-save-dogs
+  154  git status
+  155  git add js/data.js
+  156  git status
+  157  git commit -m "changed entryId to camelCase"
+  158  git status
+  159  git push origin issue-3-save-dogs
+  160  git status
+  161  git add js/main.js
+  162  git commit -m "fixed error w capitalization in main.js"
+  163  git push origin issue-3-save-dogs
+  164  git status
+  165  git checkout master
+  166  git status
+  167  git pull origin master
+  168  git status
+  169  git branch issue-4-view-saved
+  170  git switch issue-4-view-saved
+  171  git status
+  172  git add images/bookmark-black.png images/bookmark-pink.png
+  173  git status
+  174  git commit -m "imported images of bookmarks for icons"
+  175  git status
+  176  git push origin issue-4-view-saved
+  177  git status
+  178  git add css/styles.css index.html js/main.js
+  179  git status
+  180  git commit -m "added footer icon and can create/append items to the list from the local storage"
+  181  git push origin issue-4-view-saved
+  182  git status
+  183  git add css/styles.css index.html js/main.js
+  184  git status
+  185  git commit -m "created function to append elements after refreshing the page, implemented event listener to reveal updated modal for each dog picture when clicked"
+  186  git push origin issue-4-view-saved
+  187  git status
+  188  git add images/house-black.png index.html js/main.js
+  189  git status
+  190  git commit -m "made buttons in the footer functional"
+  191  git status
+  192  git push origin issue-4-view-saved
+  193  cd ~/repos/ajax-project
+  194  git status
+  195  git add css/layout.css
+  196  git status
+  197  git add index.html js/main.js
+  198  git status
+  199  git commit -m "made feature desktop compatible with header icons"
+  200  git push origin issue-4-view-saved
+  201  git status
+  202  git add js/main.js
+  203  git status
+  204  git commit -m "added function to create and append elements prior to the page being refreshed"
+  205  git push origin issue-4-view-saved
+  206  git status
+  207  git add js/main.js
+  208  git status
+  209  git commit -m "removes images when unsaved without need for a page refresh"
+  210  git status
+  211  git push origin issue-4-view-saved
+  212  git status
+  213  git add js/main.js
+  214  git status
+  215  git commit -m "corrected error where li would be appended regardless of adding/removing items"
+  216  git status
+  217  git push origin issue-4-view-saved
+  218  git status
+  219  git add css/layout.css css/styles.css index.html js/main.js
+  220  git status
+  221  git commit -m "fixed desktop view to match figma"
+  222  git status
+  223  git push origin issue-4-view-saved
+  224  git status
+  225  git add css/styles.css
+  226  git status
+  227  git commit -m "shifted icons in header over"
+  228  git push origin issue-4-view-saved
+  229  git status
+  230  git add js/main.js
+  231  git status
+  232  git commit -m "merged DOM tree generating functions and merged functions to switch views"
+  233  git status
+  234  git push origin issue-4-view-saved
+  235  git status
+  236  git checkout master
+  237  git status
+  238  git pull origin master
+  239  git status
+  240  git branch issue-5-rate-comment
+  241  git switch issue-5-rate-comment
+  242  git status
+  243  git add images/star-empty.png css/styles.css index.html
+  244  git status
+  245  git commit -m "made new modal with stars, input area, and nonfunctional save/exit button"
+  246  git status
+  247  git push origin issue-5-rate-comment
+  248  git status
+  249  git add js/main.js images/star-fill.png
+  250  git status
+  251  git commit -m "made previous stars fill out/empty depending on which star was clicked"
+  252  git status
+  253  git push origin issue-5-rate-comment
+  254  git status
+  255  git add css/styles.css index.html js/main.js
+  256  git status
+  257  git commit -m "stores rating and comments into local storage and successfully appends it to the DOM"
+  258  git status
+  259  git push origin issue-5-rate-comment
+  260  git status
+  261  git add css/layout.css css/styles.css js/main.js
+  262  git status
+  263  git commit -m "fixed css to match figma"
+  264  git status
+  265  git push origin issue-5-rate-comment
+  266  git status
+  267  git add js/main.js
+  268  git status
+  269  git commit -m "cleared rating/comment form on reroll"
+  270  git push origin issue-5-rate-comment
+  271  git status
+  272  git add css/styles.css
+  273  git commit -m "fixed spacing to match figma"
+  274  git status
+  275  git push origin issue-5-rate-comment
+  276  git status
+  277  git checkout master
+  278  git status
+  279  git pull origin master
+  280  cd ~/repos
+  281  git clone git@github.com:hsu-isaac/code-signal.git
+  282  cd code-signal
+  283  npm ci
+  284  git branch are-similar
+  285  git branch master
+  286  touch README.md
+  287  git add .
+  288  git commit -m "add README"
+  289  git push origin master
+  290  git status
+  291  git branch are-similar
+  292  git switch are-similar
+  293  git status
+  294  git add index.html is-similar.js
+  295  git status
+  296  git add main.js
+  297  git status
+  298  git commit -m "solved is-similar algo challenge"
+  299  git status
+  300  git push origin are-similar
+  301  git status
+  302  git checkout master
+  303  git status
+  304  git pull origin master
+  305  git branch array-change
+  306  git switch array-change
+  307  git status
+  308  git add index.html array-change.js
+  309  git status
+  310  git commit -m "solved array-change algo"
+  311  git push origin array-change
+  312  git status
+  313  git checkout master
+  314  git pull origin master
+  315  git status
+  316  git branch palindrome-rearranging
+  317  git switch palindrome-rearranging
+  318  git status
+  319  git add index.html palindrome-rearranging.js
+  320  git commit -m "completed palindrome rearrainging algo"
+  321  git push origin palindrome-rearranging
+  322  git checkout master
+  323  git status
+  324  git pull origin master
+  325  git status
+  326  git branch are-equally-strong
+  327  git switch are-equally-strong
+  328  git status
+  329  git add index.html are-equally-strong.js
+  330  cd ~/repos
+  331  cd peep-dog
+  332  git status
+  333  git add index.html
+  334  git commit -m "changed title"
+  335  git push origin master
+  336  cd ~/repos/code-signal
+  337  git status
+  338  git add are-equally-strong.js
+  339  git commit -m "solved are-equally-strong algo"
+  340  git push origin are-equally-strong
+  341  git checkout master
+  342  git pull origin master
+  343  git status
+  344  git branch arrayMaximalAdjacentDifference
+  345  git switch arrayMaximalAdjacentDifference
+  346  git status
+  347  git add index.html array-maximally-adjacent-difference.js
+  348  git status
+  349  git commit -m "solved array algo"
+  350  git push origin arrayMaximalAdjacentDifference
+  351  git status
+  352  git checkout master
+  353  git pull origin master
+  354  git status
+  355  git branch isIPv4
+  356  git switch isIPv4
+  357  git status
+  358  git add index.html is-IPv4.js
+  359  git status
+  360  git commit -m "solved isIPv4"
+  361  git push origin isIPv4
+  362  git checkout  master
+  363  git pull origin master
+  364  cd ~/repos
+  365  cd peep-dog
+  366  git branch project-feedback
+  367  git switch project-feedback
+  368  git status
+  369  git add css/styles.css
+  370  git commit -m "removed margin from body element"
+  371  git push origin project-feedback
+  372  git status
+  373  git add css/layout.css css/styles.css index.html
+  374  git commit -m "added text for home/bookmark buttons on desktop view and limited width on desktop modal for 'learn more'"
+  375  git push origin project-feedback
+  376  git status
+  377  git add css/styles.css
+  378  git commit -m "realigned random and bookmark buttonsso that they match vertically"
+  379  git push origin project-feedback
+  380  git status
+  381  git add css/layout.css css/styles.css
+  382  git status
+  383  git commit -m "changed pseudoclass in mobile from hover to active"
+  384  git push origin project-feedback
+  385  git status
+  386  git add css/styles.css index.html
+  387  git status
+  388  git commit -m "added brief description on homepage"
+  389  git push origin project-feedback
+  390  git status
+  391  git add css/layout.css css/styles.css
+  392  git commit -m "cleaned up css and moved certain rulesets to tye layout page"
+  393  git push origin project-feedback
+  394  git status
+  395  git add js/main.js
+  396  git status
+  397  git commit -m "made unnecessarily global variables into local variables"
+  398  git push origin project-feedback
+  399  git status
+  400  cd checkout master
+  401  checkout master
+  402  git checkout master
+  403  cd ~/repos
+  404  cd ~/repos/code-solutions
+  405  cd code-solutions
+  406  cd /code-solutions
+  407  cd c0621-code-solutions
+  408  git status
+  409  git checkout master
+  410  git status
+  411  git branch es6-const-let
+  412  git switch es6-onst-let
+  413  git switch es6-const-let
+  414  git status
+  415  git add es6-const-let
+  416  git status
+  417  git commit -m "completed es6-const-let exercise"
+  418  git push origin es6-const-let
+  419  git status
+  420  git checkout master
+  421  git status
+  422  git pull origin master
+  423  git status
+  424  git branch es6-template-literals
+  425  git switch es6-template-literals
+  426  git status
+  427  git add es6-template-literals
+  428  git status
+  429  git commit -m "completed es6-template-literals exercise"
+  430  git push origin es6-template-literals
+  431  git status
+  432  git checkout master
+  433  git status
+  434  git branch es6-destructuring
+  435  git switch es6-destructuring
+  436  git status
+  437  git add es6-destructuring
+  438  git status
+  439  git commit -m "completed es6-destructuring assignment"
+  440  git push origin es6-destructuring
+  441  git status
+  442  git checkout master
+  443  git status
+  444  git pull origin master
+  445  git status
+  446  git switch es6-destructuring
+  447  git status
+  448  git add es6-destructuring/index.html
+  449  git status
+  450  git commit -m "corrected issue with steps 13-15, misread instructions"
+  451  git push origin es6-destructuring
+  452  git status
+  453  git add es6-destructuring/index.html
+  454  git commit -m "made step 14 into es6"
+  455  git push origin es6-destructuring
+  456  git status
+  457  git add es-destructuring/index.html
+  458  git add es6-destructuring/index.html
+  459  git commit -m "changed step 13 and 15 to not have to stringify objects"
+  460  git push origin es6-destructuring
+  461  git status
+  462  git checkout master
+  463  git status
+  464  git pull origin master
+  465  git status
+  466  cd ~/repos/c0621-code-solutions
+  467  git branch es6-arrow-functions
+  468  git switch es6-arrow-functions
+  469  git status
+  470  git add es6-arrow-functions
+  471  git status
+  472  git commit -m "completed es6-arrow-functions exercise"
+  473  git push origin es6-arrow-functions
+  474  cd ~/repos/c0621-code-solutions
+  475  git status
+  476  git checkout master
+  477  git status
+  478  git pull origin master
+  479  git branch command-line-basics
+  480  git switch command-line-basics
+  481  cd command-line-basics
+  482  pwd
+  483  man man
+  484  man cat
+  485  cat laziness.txt
+  486  cat impatience.txt
+  487  cat hubris.txt
+  488  man cat
+  489  cat laziness.txt impatience.txt hubris.txt
+  490  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  491  cat three-virtues.txt
+  492  man ls
+  493  ls
+  494  ls -a
+  495  ls -F
+  496  man ls
+  497  ls -aF lfz-staff
+  498  ls lfz-staff
+  499  ls -a lfz-staff
+  500  ls -F lfz-staff
+  501  ls -aF lfz-staff > lfz-staff/contents.txt
+  502  cat lfz-staff/contents.txt
+  503  man ls
+  504  man pwd
+  505  pwd
+  506  pwd > i-was-here..txt
+  507  pwd > i-was-here.txt
+  508  pwd
+  509  ls
+  510  cat i-was-here.txt
+  511  man echo
+  512  echo 'Hello, World!'
+  513  echo 'Hello, World!' > hello.txt
+  514  ls
+  515  cat hello.txt
+  516  man touch
+  517  touch tag-youre-it.txt
+  518  touch snoot/boop.txt
+  519  ls
+  520  ls snoot
+  521  man mkdir
+  522  mkdir parent
+  523  ls
+  524  man mkdir
+  525  mkdir -p parent/child/grandchild
+  526  ls
+  527  ls parent
+  528  ls child
+  529  ls parent/child
+  530  touch parent/child/grandchild/.gitkeep
+  531  ls parent
+  532  ls child
+  533  ls/parent/child
+  534  ls parent/child
+  535  ls parent/child/grandchild
+  536  touch parent/child/.gitkeep
+  537  ls -a
+  538  ls -a parent/child/grandchild
+  539  man mv
+  540  mv pokiemans pokemon
+  541  ls
+  542  man rm
+  543  rm lol.txt
+  544  ls
+  545  rm -r kill-me/
+  546  ls
+  547  man cp
+  548  cp and-then.txt no-and-then.txt
+  549  ls
+  550  cat and-then.txt
+  551  cat no-and-then.txt
+  552  man history
+  553  history
+  554  history > command-history.txt
