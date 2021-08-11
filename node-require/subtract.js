@@ -1,2 +1,2 @@
-const subtract = (a, b) => parseInt(a) - parseInt(b);
+const subtract = (a, b) => a - b;
 module.exports = subtract;
