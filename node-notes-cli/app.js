@@ -40,4 +40,6 @@ if (process.argv[2] === 'read') {
     }
   }
   );
+} else {
+  console.log('You have entered an invalid command');
 }
