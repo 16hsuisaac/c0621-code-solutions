@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const array = [];
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
@@ -8,6 +7,7 @@ app.listen(3000, () => {
 });
 
 app.get('/api/grades', (req, res) => {
+  const array = [];
   for (const x in grades) {
     array.push(grades[x]);
   }
