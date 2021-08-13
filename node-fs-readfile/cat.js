@@ -1,30 +1,39 @@
+/* const fs = require('fs');
+let counter = 0;
+
+const readFile = () => {
+  if (counter < process.argv.length - 2) {
+    const filename = process.argv[counter + 2];
+    fs.readFile(filename, 'utf8', (err, data) => {
+      if (err) {
+        console.error(err);
+        process.exit(1);
+      }
+      console.log(data);
+      counter++;
+      readFile();
+    });
+  }
+};
+
+readFile(); */
+
 const fs = require('fs');
-const array = [];
-let a = 2;
+let counter = 0;
+const files = process.argv.slice(2);
 
-for (let i = 2; i < process.argv.length; i++) {
-  array.push('');
-}
-
-for (let i = 2; i < process.argv.length; i++) {
-  const filename = process.argv[i];
-  fs.readFile(filename, 'utf8', (err, data) => {
-    if (err) throw err;
-    array.splice(i - 2, 1, data);
-    while (true) {
-      if (array[i - 2] !== '') {
-        break;
+for (let i = 0; i < files.length; i++) {
+  fs.readFile(files[i], 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
+    files[i] = data;
+    counter++;
+    if (counter === files.length) {
+      for (let a = 0; a < files.length; a++) {
+        console.log(files[a]);
       }
     }
-    pleaseWork(array);
   });
 }
-
-const pleaseWork = array => {
-  if (a === process.argv.length - 1) {
-    for (let i = 0; i < array.length; i++) {
-      console.log(array[i]);
-    }
-  }
-  a++;
-};
