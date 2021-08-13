@@ -1,5 +1,3 @@
-// this comment is just here so I have something to commit
-
 const fs = require('fs');
 const copiedFileName = process.argv[2];
 const pasteFile = process.argv[3];
