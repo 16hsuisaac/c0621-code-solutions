@@ -22,7 +22,7 @@ select "title",
        "rating",
        totalPaid - totalReplacementCost as totalProfit
     from totalCostCTE
-      inner join totalPaidCTE using ("title")
-      inner join "films" using ("title")
+      join totalPaidCTE using ("title")
+      join "films" using ("title")
     order by totalProfit desc
     limit 5
