@@ -62,7 +62,7 @@ app.post('/api/grades', (req, res, next) => {
   const values = [req.body.name, req.body.course, req.body.score];
   db.query(sql, values)
     .then(result => {
-      res.status(200);
+      res.status(201);
       const input = result.rows[0];
       res.json(input);
     }
@@ -151,7 +151,7 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
         });
       } else {
         res.status(204);
-        res.json(deleted);
+        res.sendStatus(204);
       }
     })
     .catch(err => {
