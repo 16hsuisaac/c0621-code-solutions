@@ -1,5 +1,5 @@
 function reduce(array, reducer, initialValue) {
-  if (initialValue) {
+  if (initialValue || initialValue === 0) {
     array.splice(0, 0, initialValue);
   }
   let value = array[0];
