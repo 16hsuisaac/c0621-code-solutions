@@ -8,3 +8,15 @@ function reduce(array, reducer, initialValue) {
   }
   return value;
 }
+
+/* let i = 0
+let result = initial value
+if (arguments.length < 3) {
+  i = 1
+  result = inputArray[0]
+}
+for (; i<inputArraylength; i++) {
+  result = reducer(result, array[i])
+}
+return result;
+} */
