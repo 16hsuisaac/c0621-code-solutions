@@ -1,0 +1,29 @@
+button {
+  width: 50px;
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  height: 25px;
+  display: flex;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.justify-left {
+  display: flex;
+  justify-content: flex-start;
+  background-color: gray;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
+  background-color: green;
+}
