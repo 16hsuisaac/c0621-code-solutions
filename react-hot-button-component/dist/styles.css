@@ -1,0 +1,30 @@
+button {
+  color: white;
+}
+
+.three {
+  background-color: rgb(53, 28, 117);
+}
+
+.six {
+  background-color: rgb(103, 78, 167);
+}
+
+.nine {
+  background-color: rgb(224, 102, 102);
+}
+
+.twelve {
+  color: black;
+  background-color: rgb(246, 178, 107);
+}
+
+.fifteen {
+  color: black;
+  background-color: rgb(255, 255, 0);
+}
+
+.eighteen {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
