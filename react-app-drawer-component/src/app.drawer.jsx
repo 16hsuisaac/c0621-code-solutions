@@ -19,10 +19,6 @@ class Menu extends React.Component {
     this.setState({ menuOpen: false });
   }
 
-  notMenu() {
-    this.setState({ menuOpen: false });
-  }
-
   render() {
     if (this.state.menuOpen === false) {
       return (
@@ -36,9 +32,9 @@ class Menu extends React.Component {
           <div className="menu">
             <div>
               <h1 onClick={this.closeMenu}>Menu</h1>
-              <p onClick={this.notMenu}>About</p>
-              <p onClick={this.notMenu}>Get Started</p>
-              <p onClick={this.notMenu}>Sign In</p>
+              <p onClick={this.closeMenu}>About</p>
+              <p onClick={this.closeMenu}>Get Started</p>
+              <p onClick={this.closeMenu}>Sign In</p>
             </div>
           </div>
         </div>
