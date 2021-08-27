@@ -1,0 +1,56 @@
+.container {
+  width: 80%;
+}
+
+.row-100 {
+  display: flex;
+  width: 100%;
+}
+
+.row-10 {
+  display: flex;
+  width: 10%;
+  align-items: center;
+}
+
+.row-80 {
+  display: flex;
+  width: 80%;
+  height: 500px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: solid black;
+  margin: 5px;
+}
+
+.full {
+  background-color: black;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon:hover,
+.circle:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  object-fit: fill;
+}
