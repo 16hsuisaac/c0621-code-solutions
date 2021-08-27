@@ -1,0 +1,16 @@
+.accordion {
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: 0.5s;
+  border: 2px solid black;
+}
+
+.panel {
+  display: none;
+  border: 2px solid black;
+}
+
+.active {
+  display: block;
+}
