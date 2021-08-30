@@ -8,6 +8,6 @@ app.listen(3000, () => {
 
 const joined = path.join(__dirname, 'public');
 console.log('joined', joined);
-const expressStatic = app.use(express.static('public'));
+const expressStatic = app.use(express.static(joined));
 console.log('expressStatic', expressStatic);
 app.use(express.json());
