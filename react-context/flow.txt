@@ -1,0 +1,43 @@
+1) User can sign up:
+ - User clicks on sign up or register now which updates the hash location
+ - Event listene for hashchange is triggered and page renders with new route described by the hash location
+ - render method will create a new page
+ - this renders PageContainer which then renders the renderPage method will also run since it's a child element
+ - The route is sign-up so Auth is returned
+ - Auth checks if there is a user, since there is no user, it does not redirect
+ - Page is rendered with the welcome message for 'sign-up' and the auth-form element
+ - When user inputs username/password the auth-form's state value also updates via the handleChange method
+ - When user hits submit, a POST request is sent to /api/auth/sign-up via a fetch request
+ - The server processes the POST request by checking to see if user/pass are valid, else throwing an error
+ - If valid, password is hashed and user/pass combo are inserted to the database w sql, resulting in a 201 message
+ - Since fetch call was successful, the then method checks the hash location
+ - Hash location was sign-up, so hash location is changed to sign-in
+ - hashchange triggers and page is rendered again but with the sign-in route
+
+2) User can sign in:
+ - User inputs username/password which updates the auth-form's state value via the handleChange method
+ - On submit, a POST request is sent to /api/auth/sign-up via fetch
+ - The server processes the POST request by checking to see if user/pass are valid, else throwing an error
+ - If valid, password is hashed and user/pass combo checked against the database w sql, if either fail then a 401 error message is sent
+ - if valid, payload and token are passed to the next function
+ - The onSignIn method is called with the result of the previous function if user and token are valid
+ - onSignIn method contains the handleSignIn method which gets called
+ - handleSignIn method stores the token in local storage
+ - method also sets the state of the user property to the user value
+ - Setting the state causes the render method to be called again which calls renderPage
+ - renderPage gets directed to the 'sign-in' route
+ - auth recognizes that user is not null and redirects back to '' and updates the hash location
+ - hash location updating triggers hashchange and page is rendered again but with '' path
+ - '' path has renderPage return Home
+ - since user now has a value, the user is not redirected to the sign-in page
+
+3) User can stay signed in
+ - On page reloads, componentDidMount is called
+ - componenteDidMount checks for the token in local storage, if present then the token is decoded and state is updated with user information
+ - state updating causes render to run again leading to the home page being rendered via the same steps mentioned previously
+
+4) User can sign out
+ - Navbar is updated when user is signed in vs signed out, prompting the user to do the other
+ - When user clicks on the sign out button, the onclick event handler fires calling handleSignOut which refers to the App's handleSignout method
+ - this method removes the token from local storage and changes the state property user to null
+ - state change triggers render()  method leading to a sign-in page rendering
