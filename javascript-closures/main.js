@@ -1,11 +1,14 @@
 function graduate(credential) {
   return function (fullName) {
-    return credential + ' ' + fullName;
+    return fullName + ', ' + credential;
   };
 }
 
 const medicalSchool = graduate('M.D.');
 const lawSchool = graduate('Esq.');
 
-medicalSchool('Isaac Hsu');
-lawSchool('Isaac Hsu');
+const doc = medicalSchool('Isaac Hsu');
+const law = lawSchool('Isaac Hsu');
+
+console.log(doc);
+console.log(law);
