@@ -3,9 +3,8 @@
 
 function append(list, value) {
   const newList = new LinkedList(value);
-  let listCopy = list;
-  while (listCopy.next) {
-    listCopy = listCopy.next;
+  while (list.next) {
+    list = list.next;
   }
-  listCopy.next = newList;
+  list.next = newList;
 }

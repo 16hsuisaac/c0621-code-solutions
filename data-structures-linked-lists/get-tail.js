@@ -1,9 +1,8 @@
 /* exported getTail */
 
 function getTail(list) {
-  let listCopy = list;
-  while (listCopy.next) {
-    listCopy = listCopy.next;
+  while (list.next) {
+    list = list.next;
   }
-  return listCopy.data;
+  return list.data;
 }
